@@ -7,7 +7,7 @@ export default defineConfig({
   base: 'WebApp_TimedRandomNumber',
   plugins: [react(),
   VitePWA({
-    includeAssets: ['favicon.ico'],
+    includeAssets: ['public/favicon.ico'],
     manifest: {
       name: 'Timed Random Number',
       short_name: 'TRN',
@@ -15,7 +15,7 @@ export default defineConfig({
       theme_color: '#ffffff',
       icons: [
         {
-          src: '/pwa-512x512.png',
+          src: 'public/pwa-512x512.png',
           sizes: '512x512',
           type: 'image/png',
         },
