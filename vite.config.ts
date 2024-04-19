@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'WebApp_TimedRandomNumber',
+  base: '/WebApp_TimedRandomNumber/',
   plugins: [react(),
   VitePWA({
     includeAssets: ['public/favicon.ico'],
