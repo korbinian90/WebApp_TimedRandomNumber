@@ -15,12 +15,19 @@ export default defineConfig({
       theme_color: '#ffffff',
       icons: [
         {
-          src: 'public/pwa-512x512.png',
+          src: 'assets/pwa-512x512.png',
           sizes: '512x512',
           type: 'image/png',
         },
       ],
     },
   })
-  ]
+  ],
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name][extname]',
+      },
+    },
+  }
 })

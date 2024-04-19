@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import logo from '/pwa-512x512.png'
+import logo from './assets/pwa-512x512.png'
 
 function App() {
   // get maximum random number from user
